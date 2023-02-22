@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+"title":"Відділення",
+"photo": "./img/google_map_all.png"
+})
+
+<body>
+	@@include('html/header.html',{
+	"ftp":"",
+	"doc":"",
+	"pac":"",
+	"index":"",
+	"contact":"menu_item_active",
+	"notShow": "disp_none",
+	})
+	<div class="body_conteiner">
+		<main>
+			@@include('html/call_modal.html',{})
+			<!-- === *** MAINE CONTENT **** === -->
+
+			<div class="widht_conteiner">
+				<h2 class="maine_content_block_title">Наші відділення</h2>
+
+				<!-- TOGGLE BTNS -->
+				<!-- <div class="list_btns_wrap">
+					<p class="--list --list-active">Списоком</p>
+					<p class="--map">На мапі</p>
+				</div> -->
+
+				<!-- LIST CARDS -->
+				<div class="offices_wrap">
+					<!-- ВАРШАВСЬКИЙ -->
+					<div class="office_card_conteiner">
+						<a href="./oleksandra_olesia_6B.html" class="office_card">
+							<div class="office_imgs">
+								<img src="./img/office_olesa-6b.jpg" alt="">
+							</div>
+							<div class="office_info">
+								<p class="office_info-street">Олександра Олеся 6-Б</p>
+								<p class="office_info-street2">Виноградар (ЖК Варшавський)</p>
+								<!-- <a href="">093 409 50 17</a> -->
+								<p class="office_info-target">контакти</p>
+							</div>
+						</a>
+					</div>
+					<!-- ДРАГОМАНОВА -->
+					<div class="office_card_conteiner">
+						<a href="./dragomanova.html" class="office_card">
+							<div class="office_imgs">
+								<img src="./img/dragomanova_1.jpg" alt="">
+							</div>
+							<div class="office_info">
+								<p class="office_info-street">Драгоманова 6/1 </p>
+								<p class="office_info-street2">(Позняки)</p>
+								<!-- <a href="">093 409 50 17</a> -->
+								<p class="office_info-target">контакти</p>
+							</div>
+						</a>
+					</div>
+					<!-- ЛОБАНОВСЬКОГО -->
+					<div class="office_card_conteiner">
+						<a href="./lobonovskogo.html" class="office_card">
+							<div class="office_imgs">
+								<img src="./img/lobanovskogo17_1.jpg" alt="">
+							</div>
+							<div class="office_info">
+								<p class="office_info-street">Валерія Лобановського 17 </p>
+								<p class="office_info-street2">(Севастопольська пл.)</p>
+								<!-- <a href="">093 409 50 17</a> -->
+								<p class="office_info-target">контакти</p>
+							</div>
+						</a>
+					</div>
+					<!-- КРЮКІВЩИНА -->
+					<div class="office_card_conteiner">
+						<a href="./krukivshchina.html" class="office_card">
+							<div class="office_imgs">
+								<img src="./img/krukivshchina_1.jpg" alt="">
+							</div>
+							<div class="office_info">
+								<p class="office_info-street">вул. Щастя 1</p>
+								<p class="office_info-street2">(Крюківщина)</p>
+								<!-- <a href="">093 409 50 17</a> -->
+								<p class="office_info-target">контакти</p>
+							</div>
+						</a>
+					</div>
+					<!-- БРОВАРИ -->
+					<div class="office_card_conteiner">
+						<a href="./brovary.html" class="office_card">
+							<div class="office_imgs">
+								<img src="./img/brovary_1.jpg" alt="">
+							</div>
+							<div class="office_info">
+								<p class="office_info-street">Гагаріна 26 </p>
+								<p class="office_info-street2">(Бровари)</p>
+								<!-- <a href="">093 409 50 17</a> -->
+								<p class="office_info-target">контакти</p>
+							</div>
+						</a>
+					</div>
+
+				</div>
+
+				<!-- GOOGLE MAP -->
+				<!-- <div class="google_map_wrap hidden">
+					<img src="./img/google_map.png" alt="">
+				</div> -->
+
+				<h2 class="maine_content_block_title">Інформація</h2>
+
+				<div class="contacts_inform_wrap">
+					<p>ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ "МАЙРЕЙ ЛАБ"</p>
+					<p>ЄДРПОУ 43196143</p>
+					<p>E-mail: myraylab@gmail.com</p>
+					<a href="tel:+380971650709">Телефон: +38 (097) 165 07 09</ф>
+						<!-- <a href="">Документи</a> -->
+				</div>
+
+			</div>
+
+		</main>
+	</div>
+	@@include('html/footer.html',{})
+	<script src="js/app.min.js"></script>
+	</script>
+
+</body>
+
+</html>

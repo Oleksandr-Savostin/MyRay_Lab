@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+"title":"MyRay Lab",
+"photo": "https://myraylab.com.ua/img/scan_people4-1.jpg"
+})
+
+<body>
+	@@include('html/header.html',{
+	"ftp":"",
+	"doc":"",
+	"pac":"",
+	"index":"menu_item_active",
+	"contact":"",
+	})
+	<div class="body_conteiner">
+		<main>
+			@@include('html/call_modal.html',{})
+			<!-- === Maine content === -->
+			<div class="maine_content_block widht_conteiner">
+
+				<!-- === Servises ===-->
+				<h2 class="maine_content_block_title">Послуги</h2>
+				<div class="cards_wrap">
+					<div class="block_info">
+
+						<div class="block_info_wrap">
+							<h4 class="min_title">
+								Комп'ютерна томографія або 3D КТ — інформативний метод діагностики при
+								лікуванні і протезуванні зубів.
+							</h4>
+
+							<!-- points text -->
+							<div class="point_text_wrap">
+								<div class="point_text_block">
+									<p class="point_text">Проводимо діагностику на сучасному обладнанні PLANMECA 3D
+									</p>
+									<p class="point_text">Висококваліфікований персонал та висока якість знімків (HD)
+									</p>
+									<p class="point_text">Робимо розрахунки, описи, 3D цефалометричний аналіз</p>
+									<p class="point_text">Швидкість дослідження: сканування виконується максимум 15
+										секунд</p>
+									<p class="point_text">Мінімальна доза опромінення для організму (35 – 55 мкЗв)</p>
+									<p class="point_text">Результати досліджень записуються на СD диск, друкуються на
+										плівці та висилаються на email пацієнтам та лікарям
+									</p>
+									<p class="point_text">Власний FTP сервер для швидкого достпупу та зберігання
+										результатів</p>
+									<p class="point_text">У нас завжди є світло та інтернет</p>
+								</div>
+							</div>
+						</div>
+						<!-- SWIPER -->
+						<div class="block_info_swipe">
+							<div class="swiper">
+								<div class="swiper-wrapper">
+									<!-- * -->
+									<div class="swiper-slide">
+										<img src="./img/scan_people4-1.jpg" alt="">
+									</div>
+									<!-- * -->
+									<div class="swiper-slide">
+										<img src="@img/place_cd.jpg" alt="">
+									</div>
+									<!-- * -->
+									<div class="swiper-slide">
+										<img src="@img/place_pc.jpg" alt="">
+									</div>
+								</div>
+
+								<div class="swiper-pagination"></div>
+								<!-- <div class="swiper-button-prev"></div> -->
+								<!-- <div class="swiper-button-next"></div> -->
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<!-- === Prises === -->
+			<div class="maine_content_block widht_conteiner" id="price">
+				<h2 class="maine_content_block_title">Ціни</h2>
+				<div class="cards_wrap">
+					<h4 class="min_title">2D знімок</h4>
+					<div class="cards">
+						<!-- ОПТГ -->
+						<a class="card_wrap" href="./orto.html">
+							<div class="card_item cl1">
+								<div class="card_item_name">
+									<p class="d2">2D</p>
+									<p class="item_title">орто-<br>пантомограма <br>
+										<span>(ОПТГ)</span>
+									</p>
+									<p class="item_price">300 грн</p>
+								</div>
+								<img class="card_item_img" alt="" src="@img/orto.jpg">
+							</div>
+						</a>
+						<!-- ТРГ -->
+						<a class="card_wrap" href="./trg.html">
+							<div class="card_item cl1">
+								<div class="card_item_name">
+									<p class="d2">2D</p>
+									<p class="item_title">
+										теле-<br>рентгенограма<br>
+										<span>пряма/бокова</span>
+									</p>
+
+									<p class="item_price">300 грн</p>
+								</div>
+								<img class="card_item_img" alt="" src="@img/tele.jpg">
+							</div>
+						</a>
+					</div>
+					<h4 class="min_title">3D знімок</h4>
+					<div class="cards">
+						<!-- кт 2 щелепи -->
+						<a class="card_wrap" href="./kt.html">
+							<div class="card_item">
+								<p class="d2">3D</p>
+								<div class="card_item_name">
+									<p class="item_title">кпкт щелепи<br>
+										<span>верхньої та <br>нижньої</span>
+									</p>
+									<p class="item_price">750 грн</p>
+								</div>
+								<img class="card_item_img" alt="" src="@img/kt1.jpg">
+							</div>
+						</a>
+						<!-- верхня щелепа -->
+						<a class="card_wrap" href="./kt12.html">
+							<div class="card_item">
+								<p class="d2">3D</p>
+								<div class="card_item_name">
+									<p class="item_title">кпкт щелепи<br>
+										<span>верхньої або <br>нижньої</span>
+									</p>
+
+									<p class="item_price">650 грн</p>
+								</div>
+								<img class="card_item_img" alt="" src="@img/dwn_scan.jpg">
+							</div>
+						</a>
+						<!-- сегмент -->
+						<a class="card_wrap" href="./kt05.html">
+							<div class="card_item">
+								<p class="d2">3D</p>
+								<div class="card_item_name">
+									<p class="item_title">кпкт щелепи<br>
+										<span>1/2 (сегмент)</span>
+									</p>
+
+									<p class="item_price">450 грн</p>
+								</div>
+								<img class="card_item_img" alt="" src="@img/segment.jpg">
+							</div>
+						</a>
+						<!-- 20*17 -->
+						<a class="card_wrap" href="./20*17.html">
+							<div class="card_item">
+								<p class="d2">3D</p>
+								<div class="card_item_name">
+									<p class="item_title">КПКТ<br>Черепа 20*17 <br>
+										<span>(HD)</span>
+									</p>
+									<p class="item_price">1250 грн</p>
+								</div>
+								<img class="card_item_img" alt="" src="@img/20*17.jpg">
+							</div>
+						</a>
+						<!-- суглоби -->
+						<a class="card_wrap" href="./sugloby.html">
+							<div class="card_item">
+								<p class="d2">3D</p>
+								<div class="card_item_name">
+									<p class="item_title">кпкт суглобів<br>
+										<span>(за 1 суглоб)</span>
+									</p>
+									<p class="item_price">500 грн</p>
+								</div>
+								<img class="card_item_img" alt="" src="@img/suglob2.jpg">
+							</div>
+						</a>
+						<!-- синуси -->
+						<a class="card_wrap" href="./synusy.html">
+							<div class="card_item">
+								<p class="d2">3D</p>
+								<div class="card_item_name">
+									<p class="item_title">Навколоновові<br>синуси<br>
+										<span>з деталізацією</span>
+									</p>
+									<p class="item_price">950 грн</p>
+								</div>
+								<img class="card_item_img" alt="" src="@img/nos.jpg">
+							</div>
+						</a>
+					</div>
+					<h4 class="min_title">Дослідження</h4>
+					<div class="cards">
+						<!-- 3D цеф аналіз -->
+						<a class="card_wrap" href="./3dcef.html">
+							<div class="card_item">
+								<p class="d2">4-5 днів</p>
+								<div class="card_item_name">
+									<p class="item_title">Цефалометричний<br>аналіз<br>
+										<span>(у 3D)</span>
+									</p>
+									<p class="item_price">650 грн</p>
+								</div>
+								<img class="card_item_img" alt="" src="@img/3d_cef_analiz.jpg">
+							</div>
+						</a>
+						<!-- розрахунок ТРГ -->
+						<a class="card_wrap" href="./opys-trg.html">
+							<div class="card_item">
+								<p class="d2">1 день</p>
+								<div class="card_item_name">
+									<p class="item_title">Розрахунок<br>ТРГ<br>
+										<span>(телерентгенограми)</span>
+									</p>
+									<p class="item_price">100 грн</p>
+								</div>
+								<img class="card_item_img" alt="" src="@img/3d_cef_analiz2.jpg">
+							</div>
+						</a>
+						<!-- Опис синусів -->
+						<a class="card_wrap" href="./opys-synusy.html">
+							<div class="card_item">
+								<p class="d2">3 дні</p>
+								<div class="card_item_name">
+									<p class="item_title">опис<br> Навколоносових <br>синусів<br>
+										<!-- <span>(у 3D)</span> -->
+									</p>
+									<p class="item_price">150 грн</p>
+								</div>
+								<img class="card_item_img" alt="" src="@img/3d_cef_analiz.jpg">
+							</div>
+						</a>
+
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include('html/footer.html',{})
+		<!-- === SCRIPS === -->
+		<script src="js/app.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+"title":"Контакти-Лобановського",
+"photo": "https://myraylab.com.ua/img/lobanovskogo_map.jpg"
+})
+
+<body>
+	@@include('html/header.html',{
+	"ftp":"",
+	"doc":"",
+	"pac":"",
+	"index":"",
+	"contact":"menu_item_active",
+	"notShow": "disp_none",
+	})
+	<div class="body_conteiner">
+		<main>
+			@@include('html/call_modal.html',{})
+			<!-- ===  === -->
+			<div class="widht_conteiner">
+
+				<h2 class="maine_content_block_title">Відділення</h2>
+				<div class="block_conteiner">
+					<div class="block_info block_info-office">
+						<div class="block_info_wrap block_info_wrap-office">
+							<h4 class="min_title_office">
+								пр-т Валерія Лобановського 17
+							</h4>
+							<p class="min_title_specification">2 поверх, офіс 225 (Севастопольська пл)</p>
+
+							<div class="time_grafic-office_wrap">
+								<p class="mini_title_text grf">Графік роботи:</p>
+								<p class="mini_title_text">Пн-Пт: 09:00 - 19:00</p>
+								<p class="mini_title_text">Cб: 09:30 - 18:00</p>
+								<p class="mini_title_text">Вс: Вихідний</p>
+								<a class="mini_title_text" href="">тел: 097 047 12 65</a>
+							</div>
+							<div class="pdf_btn office_online_btn">
+								<a class="pdf_btn_link --target_pdf --office_online" href="https://n782158.alteg.io/"
+									target="_blank">Записатись онлайн</a>
+							</div>
+							<a class="google_map_road_ic pdf_btn_link --target_pdf"
+								href="https://goo.gl/maps/zDhKiWeT9kaDitSF8">
+								<img src="./img/google_map_icon.svg" alt="">
+								<p>маршрут</p>
+							</a>
+						</div>
+						<!-- SWIPER -->
+						<div class="block_info_swipe block_info_swipe-office">
+							<div class="swiper">
+								<div class="swiper-wrapper">
+									<!-- * -->
+									<div class="swiper-slide">
+										<img src="./img/lobanovskogo_map.jpg" alt="">
+									</div>
+									<!-- * -->
+									<div class="swiper-slide">
+										<img src="./img/lobanovskogo17_1.jpg" alt="">
+									</div>
+									<!-- * -->
+									<div class="swiper-slide">
+										<img src="./img/lobanovskogo17_3.jpg" alt="">
+									</div>
+									<!-- * -->
+									<div class="swiper-slide">
+										<img src="./img/lobanovskogo17_2.jpg" alt="">
+									</div>
+								</div>
+
+								<div class="swiper-pagination"></div>
+								<!-- <div class="swiper-button-prev"></div> -->
+								<!-- <div class="swiper-button-next"></div> -->
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</main>
+	</div>
+	@@include('html/footer.html',{})
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>

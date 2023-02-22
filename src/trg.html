@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+"title":"Телерентгенограма",
+"photo": "https://myraylab.com.ua/img/scan_people4-1.jpg"
+})
+
+<body>
+	@@include('html/header.html',{
+	"ftp":"",
+	"doc":"",
+	"pac":"",
+	"index":"menu_item_active",
+	"contact":"",
+	"notShow": "disp_none",
+	})
+	<div class="body_conteiner">
+		<main>
+			@@include('html/call_modal.html',{})
+			<!-- ===  === -->
+			<div class="widht_conteiner">
+
+				<h2 class="maine_content_block_title">Знімок</h2>
+				<div class="block_conteiner">
+					<div class="block_info block_info-office">
+						<div class="block_info_wrap block_info_wrap-office">
+							<h4 class="min_title_office">
+								Телерентгенограма
+							</h4>
+							<p class="min_title_specification">Тип знімку - 2D</p>
+
+							<div class="time_grafic-office_wrap">
+								<p class="mini_title_text grf grf_item">Вартість - 300 грн</p>
+								<p class="mini_title_text">Загальний час прийому - 15 хв</p>
+								<p class="mini_title_text">Час сканування - 15 сек</p>
+								<p class="mini_title_text">Друк на фотопапері / e-mail / лікарю на ftp</p>
+								<!-- <a class="mini_title_text" href="">тел: 097 165 07 09</a> -->
+							</div>
+							<div class="pdf_btn scan_online_btn">
+								<a class="pdf_btn_link --target_pdf --office_online" href="https://n782158.alteg.io/"
+									target="_blank">Записатись онлайн</a>
+							</div>
+							<!-- <a class="google_map_road_ic pdf_btn_link --target_pdf">
+								<img src="./img/google_map_icon.svg" alt="">
+								<p>маршрут</p>
+							</a> -->
+						</div>
+						<!-- SWIPER -->
+						<div class="block_info_swipe block_info_swipe-office">
+							<div class="swiper">
+								<div class="swiper-wrapper">
+									<!-- * -->
+									<div class="swiper-slide">
+										<img src="./img/tele_.jpg" alt="">
+									</div>
+								</div>
+
+								<div class="swiper-pagination"></div>
+								<!-- <div class="swiper-button-prev"></div> -->
+								<!-- <div class="swiper-button-next"></div> -->
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</main>
+	</div>
+	@@include('html/footer.html',{})
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>

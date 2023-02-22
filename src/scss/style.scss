@@ -1,0 +1,316 @@
+@import "fonts";
+@import "reset";
+@import "maine";
+@import "components/header";
+@import "components/work_info";
+@import "components/swiper-bundle";
+@import "components/footer";
+@import "components/doc_page";
+@import "components/contacts";
+@import "components/office_info_page";
+@import "components/pacient_page";
+@import "components/call_modal";
+
+
+body {
+	font-family: OpenSans;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.3;
+	margin: 0 auto;
+	// padding: 0 10px;
+}
+
+main {
+	opacity: 1;
+	transition: .2s;
+	padding-bottom: 60px;
+}
+
+.widht_conteiner {
+	max-width: 1170px;
+	// border: 1px solid black;
+	margin: 0 auto;
+	box-sizing: border-box;
+	padding: 0 15px;
+}
+
+.maine {
+	width: 100%;
+	padding: 30px 0px;
+	position: relative;
+	// transition: .3s;
+	opacity: 1;
+	// border-top: 1px solid #e5e5e5;
+	box-shadow: 0 -1px 0 0 rgb(0 0 0 / 5%);
+
+	&_fix_header {
+		margin-top: 80px;
+	}
+
+	.maine_title_block {
+		@extend %title-h1;
+	}
+
+	&_subtitle {
+		padding-top: 20px;
+		font-size: 20px;
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: url(@img/content/maine_bg.jpg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		z-index: -1;
+		opacity: 0.2;
+	}
+
+	@media (max-width: 980px) {
+		.maine_title_block {
+			font-size: 22px;
+		}
+
+		.maine_subtitle {
+			font-size: 16px;
+			padding-top: 10px;
+		}
+
+		padding: 15px 0 10px;
+	}
+}
+
+.planmeca_logo {
+	width: 185px;
+	// width: 240px;
+	padding: 15px 15px 0;
+
+}
+
+.maine_content_block_title {
+	@extend %title-h2;
+}
+
+.price_block_wrap,
+.maine_content_block {
+
+	&_title {
+		font-family: $mon;
+	}
+
+	padding: 15px 15px;
+	// margin-bottom: 25px;
+
+}
+
+.block_info {
+	display: flex;
+
+	@media (max-width: 870px) {
+		flex-direction: column-reverse;
+	}
+
+
+	&_swipe {
+		flex: 0 0 50%;
+		position: relative;
+		min-height: 350px;
+	}
+
+	.swiper {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+		}
+	}
+
+	.point_text_wrap {
+		font-size: 15px;
+		font-weight: 500;
+		line-height: 24px;
+		color: $nice-gray;
+		margin: 15px 0;
+	}
+
+	.point_text_block {
+		padding: 5px;
+		padding-left: 40px;
+		line-height: 22px;
+
+		p {
+			position: relative;
+			padding: 6px 5px;
+
+			&::before {
+				content: '';
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				left: -28px;
+				width: 12px;
+				height: 12px;
+				border-radius: 50%;
+				border: 2px solid $main-color;
+			}
+
+			&::after {
+				content: '';
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				left: -24px;
+				width: 8px;
+				height: 8px;
+				border-radius: 50%;
+				// border: 2px solid $main-color;
+				background-color: $main-color;
+			}
+		}
+	}
+}
+
+.min_title {
+	// font-family: $mon;
+	font-size: 20px;
+	font-weight: 500;
+	color: $nice-gray;
+	max-width: 700px;
+	margin: 20px 10px 10px;
+}
+
+.cards_wrap {
+	// border-top: 1px solid rgb(0 0 0 / 15%);
+	// border-bottom: 1px solid rgb(0 0 0 / 15%);
+	padding: 10px 5px;
+
+	.cards {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(280px, auto));
+		row-gap: 12px;
+		column-gap: 12px;
+
+		@media (max-width: 700px) {
+			row-gap: 7px;
+			column-gap: 7px;
+		}
+
+	}
+
+	.card_wrap {
+		margin: 10px;
+		border-radius: 10px;
+		box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+		transition: .4s;
+
+		@media (any-hover: hover) {
+			&:hover {
+				transform: scale(1.05);
+			}
+		}
+	}
+
+	.card_item {
+		border-radius: 10px;
+		// width: 320px;
+		// height: 160px;
+		height: 140px;
+		// background-color: #000;
+		background-color: #fff;
+		overflow: hidden;
+		position: relative;
+
+		.d2 {
+			content: '2D';
+			font-size: 16px;
+			font-weight: 700;
+			position: absolute;
+			color: $nice-gray;
+			right: 10px;
+			top: 5px;
+			z-index: 1;
+			text-shadow: rgb(9 30 66 / 25%) 0px 4px 8px -2px, rgb(9 30 66 / 8%) 0px 0px 0px 1px;
+		}
+
+		.cl1::after {
+			content: "";
+			position: absolute;
+			top: -41px;
+			left: 76px;
+			transform: rotate(55deg);
+			width: 96%;
+			height: 186%;
+			background-color: #292929;
+			border-radius: 50%;
+			box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+		}
+
+		&_name {
+			z-index: 2;
+			text-transform: uppercase;
+			color: #fff;
+			text-align: right;
+			font-family: $mon;
+
+			.item_title {
+				position: absolute;
+				font-family: $mon;
+				// top: 40px;
+				top: 33px;
+				right: 10px;
+				z-index: 2;
+				font-size: 15px;
+				font-weight: 600;
+				color: $blue;
+
+				span {
+					font-size: 13px;
+					font-weight: 400;
+				}
+			}
+
+			.item_price {
+				position: absolute;
+				bottom: 15px;
+				right: 0;
+				padding: 0px 5px;
+				padding-left: 20px;
+				background: $main-light;
+				font-family: $mon;
+				font-size: 18px;
+				font-weight: 500;
+				z-index: 2;
+				border-top-left-radius: 8px;
+				border-bottom-left-radius: 8px;
+			}
+		}
+
+		&_img {
+			height: 100%;
+			object-fit: cover;
+			position: absolute;
+			top: 0;
+			// left: -24%;
+			right: 48%;
+			// opacity: 0.5;
+			transform: translate();
+			// filter: invert(100%);
+		}
+	}
+}

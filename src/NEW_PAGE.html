@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+"title":"Лікарям",
+"photo": "https://myraylab.com.ua/img/scan_people4-1.jpg"
+})
+
+<body>
+	@@include('html/header.html',{
+	"ftp":"",
+	"doc":"menu_item_active",
+	"pac":"",
+	"index":"",
+	"contact":"",
+	})
+	<div class="body_conteiner">
+		<main>
+			@@include('html/call_modal.html',{})
+			<!-- Графік роботи мміні контакти -->
+			@@include('html/work_info.html',{
+			"noshadow": "work_info_wrap_noshadow",
+			"off": "work_info_wrap_off"
+			})
+			<!-- === Maine Title === -->
+			<div class="maine">
+				<div class="widht_conteiner">
+					<div class="maine_title_block">
+						<h1 class="maine_title">
+							Комп'ютерна томографія<br>
+							Щелепно-лицева діагностика<br>
+						</h1>
+						<p class="maine_subtitle">
+							На обладнанні нового покоління
+						</p>
+						<img class="planmeca_logo" src="@img/planmeca_logo.svg" alt="">
+					</div>
+				</div>
+			</div>
+
+			<!-- === Prises === -->
+			<div class="price_block_wrap widht_conteiner">
+				<h2 class="">Олександра Олеся 6-Б</h2>
+				<div class="cards cards_wrap">
+				</div>
+			</div>
+
+		</main>
+	</div>
+	@@include('html/footer.html',{})
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
